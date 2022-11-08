@@ -1,15 +1,20 @@
 
 const onClickAdd = () => {
   const inputText = document.getElementById("add-text").value;
-  document.getElementById("add-text").value = "";
+  document.getElementById("add-text").value = ""
 
+  // 関数化(共通化)
+  createImcompleteList(inputText);
+};
+
+const createImcompleteList = (text) => {
   // divを作成
   const div = document.createElement("div");
   div.className = "list-row"
 
   // liを作成
   const li = document.createElement("li");
-  li.innerText = inputText;
+  li.innerText = text;
 
   // button(完了)を作成
   const completeButton = document.createElement("button");
@@ -27,6 +32,14 @@ const onClickAdd = () => {
     
     const returnButton = document.createElement("button");
     returnButton.innerText = "戻す";
+    returnButton.addEventListener("click", () => {
+      const returnList = returnButton.parentNode;
+      document.getElementById("complete-list").removeChild(returnList);
+
+      const text = returnButton.parentNode.firstElementChild.innerText;
+      returnButton.textContent = null;
+      createImcompleteList(text);
+    });
     
     addList.appendChild(li);
     addList.appendChild(returnButton);
