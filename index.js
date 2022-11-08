@@ -1,7 +1,7 @@
 
 const onClickAdd = () => {
   const inputText = document.getElementById("add-text").value;
-  document.getElementById("add-text").value = ""
+  document.getElementById("add-text").value = "";
 
   // 関数化(共通化)
   createImcompleteList(inputText);
