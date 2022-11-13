@@ -74,8 +74,10 @@ const editTask = (id) => {
   const deleteBtn = listParentNode.children[3];
 
   const editForm = document.createElement("input");
+  editForm.className = "text"
   listParentNode.replaceChild(editForm, text);
 
+  const addBtn = document.createElement("button");
   addBtn.innerText = "保存";
   addBtn.className = "btn";
   listParentNode.appendChild(addBtn);
@@ -90,7 +92,7 @@ const editTask = (id) => {
 
       const newText = document.createElement("li");
       newText.innerText = currentList.value;
-      newText.className = "new-text";
+      newText.className = "text";
 
       listParentNode.replaceChild(newText, editForm);
       editBtn.style.display = "block";
@@ -113,7 +115,7 @@ const addTasks = (id, value) => {
 
   const li = document.createElement("li");
   li.innerText = value;
-
+  li.className = "text";
 
   const editBtn = document.createElement("button");
   editBtn.innerText = "編集";
