@@ -13,7 +13,7 @@ addBtn.addEventListener("click", () => {
 });
 
 const createTasks = () => {
-  if(inputTodo.value ) {
+  if(inputTodo.value) {
     todos.push({ id, value: inputTodo.value, isCompleted: false });
     addTasks(id, inputTodo.value);
     id++;
