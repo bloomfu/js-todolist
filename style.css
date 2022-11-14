@@ -1,0 +1,67 @@
+.wrapper {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.header {
+  background-color: khaki;
+  padding: 1px;
+  border-radius: 8px;
+}
+
+.input {
+  background-color: lavender;
+  padding: 9px;
+  border-radius: 8px;
+}
+
+.input-area {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  margin-right: 7px;
+}
+
+.status-filed {
+  margin-top: 40px;
+}
+
+.status {
+  display: flex;
+  list-style: none;
+}
+
+.status-list {
+  margin-right: 15px;
+  font-size: 12px
+}
+
+.list-filed {
+  background-color: greenyellow;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.lists {
+  padding: 2px;
+}
+
+.list-row {
+  display: flex;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  margin-right: 15px;
+}
+
+.text {
+  margin-right: auto;
+}
+
+.btn {
+  margin-right: 10px;
+}
