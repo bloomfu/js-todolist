@@ -74,6 +74,7 @@ const editTask = (id) => {
   const deleteBtn = listParentNode.children[3];
 
   const editForm = document.createElement("input");
+  editForm.value = text.innerText;
   editForm.className = "text"
   listParentNode.replaceChild(editForm, text);
 
