@@ -1,2 +1,2 @@
-### js-todolist
-生javascriptのみで作ったTODO LISTです。※特訓のためあえてREACTを使っていません
+## js-todolist
+生javascriptのみで作ったTODO LISTです。※特訓のため、あえてREACTを使っていません
